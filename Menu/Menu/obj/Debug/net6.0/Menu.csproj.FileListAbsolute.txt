@@ -1,0 +1,15 @@
+/Users/maxhotiuk/Desktop/Menu/Menu/bin/Debug/net6.0/Menu
+/Users/maxhotiuk/Desktop/Menu/Menu/bin/Debug/net6.0/Menu.deps.json
+/Users/maxhotiuk/Desktop/Menu/Menu/bin/Debug/net6.0/Menu.runtimeconfig.json
+/Users/maxhotiuk/Desktop/Menu/Menu/bin/Debug/net6.0/Menu.dll
+/Users/maxhotiuk/Desktop/Menu/Menu/bin/Debug/net6.0/Menu.pdb
+/Users/maxhotiuk/Desktop/Menu/Menu/obj/Debug/net6.0/Menu.csproj.AssemblyReference.cache
+/Users/maxhotiuk/Desktop/Menu/Menu/obj/Debug/net6.0/Menu.GeneratedMSBuildEditorConfig.editorconfig
+/Users/maxhotiuk/Desktop/Menu/Menu/obj/Debug/net6.0/Menu.AssemblyInfoInputs.cache
+/Users/maxhotiuk/Desktop/Menu/Menu/obj/Debug/net6.0/Menu.AssemblyInfo.cs
+/Users/maxhotiuk/Desktop/Menu/Menu/obj/Debug/net6.0/Menu.csproj.CoreCompileInputs.cache
+/Users/maxhotiuk/Desktop/Menu/Menu/obj/Debug/net6.0/Menu.dll
+/Users/maxhotiuk/Desktop/Menu/Menu/obj/Debug/net6.0/refint/Menu.dll
+/Users/maxhotiuk/Desktop/Menu/Menu/obj/Debug/net6.0/Menu.pdb
+/Users/maxhotiuk/Desktop/Menu/Menu/obj/Debug/net6.0/Menu.genruntimeconfig.cache
+/Users/maxhotiuk/Desktop/Menu/Menu/obj/Debug/net6.0/ref/Menu.dll
