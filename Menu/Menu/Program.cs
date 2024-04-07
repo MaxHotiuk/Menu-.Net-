@@ -1,4 +1,5 @@
-﻿namespace Menu
+﻿// Потрібно зробити GetFunction(), яка буде викликати меню
+namespace Menu
 {
     public static class Program
     {
@@ -10,13 +11,30 @@
         {
             Console.WriteLine("This is another test function");
         }
-
-        static async Task Main(string[] args)
+        public static void RunMenu(Menu menu)
+        {
+            string func;
+            do
+            {
+                func = menu.GetFunction();
+                if (func != "Exit" && func != null)
+                {
+                    var methodInfo = typeof(Program).GetMethod(func);
+                    if (methodInfo != null)
+                    {
+                        methodInfo.Invoke(null, null);
+                        Console.WriteLine("Press any key to continue...");
+                        Console.ReadLine();
+                    }
+                }
+            } while (func != "Exit");
+        }
+        public static void Main()
         {
             Menu menu = new Menu();
             menu.Add("Option 1", "TryFunction", 1);
             menu.Add("Option 2", "TryFunction2", 1);
-            await menu.Run();
+            RunMenu(menu);
         }
     }
 }

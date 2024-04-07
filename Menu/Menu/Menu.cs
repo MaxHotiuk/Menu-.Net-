@@ -1,7 +1,7 @@
 namespace Menu;
-class Menu
+public class Menu
 {
-    private readonly List<MenuLine> _menuLines;
+    public List<MenuLine> _menuLines { get; set; }
     private int _option = 1;
     private bool isSelected = false;
     private readonly string _selected = "> \u001b[32m";
@@ -59,28 +59,22 @@ class Menu
         isSelected = false;
         return _option;
     }
-    public async Task Run()
+    public string GetFunction()
     {
-        do
+        _option = ReadOption();
+        if (_option == _menuLines.Count + 1)
         {
-            _option = ReadOption();
-            if (_option > _menuLines.Count)
-            {
-                break;
-            }
-            MenuLine selectedLine = _menuLines[_option - 1];
-            Console.Clear();
-            if (selectedLine.GetCommand() != null)
-            {
-                await ExecuteFunction(selectedLine.GetCommand()); // Pass the function name
-            }
-            Console.ReadLine();
-        } while (_option <= _menuLines.Count);
+            return "Exit";
+        }
+        MenuLine selectedLine = _menuLines[_option - 1];
+        Console.Clear();
+        if (selectedLine.GetCommand() != null)
+        {
+            return selectedLine.GetCommand();
+        }
+        else
+        {
+            return string.Empty;
+        }
     }
-
-    private async Task ExecuteFunction(string functionName)
-    {
-        await Task.Run(() => typeof(Program).GetMethod(functionName)?.Invoke(null, null));
-    }
-
 }

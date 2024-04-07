@@ -1,6 +1,6 @@
 namespace Menu;
 
-class MenuLine
+public class MenuLine
 {
     private readonly string _text;
     private readonly string _command;
